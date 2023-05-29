@@ -10,7 +10,7 @@ function calculardata () {
 
     rendapercapita = (renda / pessoas)
     
-    if (idadeconver > 16 && rendapercapita < 1500) {
+    if (idadeconver >= 16 && rendapercapita < 1500) {
         document.getElementById('resultado').innerHTML = ('Seja Bem-Vindo!')
     } else if (idadeconver < 16) {
         document.getElementById('resultado').innerHTML = ('Não foi possivel fazer o cadastro.')
