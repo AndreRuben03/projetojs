@@ -4,43 +4,299 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-    <title>Forms</title>
+    <link rel="shortcut icon" href="https://www.go.senac.br/img/icons/favicon.png">
+    <title>Senac Goiás</title>
 </head>
+<header style="background-color: blue;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="display: flex; justify-content: space-between;">
+            <img src="img/logo.png" alt="" width="100px">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="" style="color: black; margin-left: 750px;">
+                    Início
+                </a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link active" aria-current="page" href="pages/pagina1.html" style="color:black;">
+                    Cursos  
+                </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
 <body>
-    <div class="idade">
-        <h1>
-            Data de nascimento
-        </h1>
-        <input type="date" id="idade">
-        <button onclick="calculardata()">
-            >
-        </button>
-        <div id="mostrarcurso"></div>
+    <div class="row" style="margin-right: 0; background-color: #45B4DE; padding-bottom: 30px;">
+        <div class="col" id="campus">
+            <h2 style="display: flex; justify-content: center; color: black; align-items: center; margin-top: 60px;">
+               Inscrições PSG - SENAC-GO
+            </h2>
+        </div>
+  </div>
+        <div class="col-12 p-4" style="background-color: #45B4DE;">
+        <form class="">
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">
+                        Nome
+                    </label>
+                    <input class="form-control" type="text" name="f_nome">
+                </div>
+                <div class="col">
+                    <label class="form-label">
+                        Sobrenome
+                    </label>
+                    <input class="form-control" type="text" name="f_nome">
+                </div>
+                <div class="col">
+                    <label class="form-label">
+                        Email
+                    </label>
+                    <input class="form-control" type="email" name="f_nome">
+                </div>
+                <div class="col">
+                    <label class="form-label">
+                        Senha
+                    </label>
+                    <input class="form-control" type="password" name="f_nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Feminino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Outros
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="form-label">
+                        Telefone
+                    </label>
+                    <input class="form-control" type="text" name="f_nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label>
+                        Data de nascimento
+                    </label>
+                     <input type="date" id="idade" class="form-control">
+                </div>
+                <div class="col">
+                    <label>
+                        Renda per capita
+                     </label>
+                     <input type="number" id="renda" class="form-control">
+                </div>     
+                <div class="col">
+                    <label>
+                        Pessoas
+                    </label>
+                    <input type="number" id="pessoas" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="inputAddress" class="form-label">
+                        Endereço
+                    </label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col">    
+                    <label for="inputCity" class="form-label">
+                        Cidade
+                    </label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col">
+                    <label for="inputZip" class="form-label">
+                        CEP
+                    </label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col">
+                    <label for="inputState" class="form-label">
+                        Estado
+                    </label>
+                    <select id="inputState" class="form-select">
+                        <option selected>
+                            Selecione...
+                        </option>
+                        <option>
+                            Goiás
+                        </option>
+                        <option>
+                            Acre
+                        </option>
+                        <option>
+                            Alagoas
+                        </option>
+                        <option>
+                            Amapá
+                        </option>
+                        <option>
+                            Amazonas
+                        </option>
+                        <option>
+                            Bahia
+                        </option>
+                        <option>
+                            Ceará
+                        </option>
+                        <option>
+                            Espírito Santo
+                        </option>
+                        <option>
+                            Maranhão
+                        </option>
+                        <option>
+                            Mato Grosso
+                        </option>
+                        <option>
+                            Mato Grosso Sul
+                        </option>
+                        <option>
+                            Minas Gerais
+                        </option>
+                        <option>
+                            Pará
+                        </option>
+                        <option>
+                            Paraíba
+                        </option>
+                        <option>
+                            Paraná
+                        </option>
+                        <option>
+                            Pernambuco
+                        </option>
+                        <option>
+                            Piauí
+                        </option>
+                        <option>
+                            Rio de Janeiro
+                        </option>
+                        <option>
+                            Rio Grande do Norte
+                        </option>
+                        <option>
+                            Rio Grando do Sul
+                        </option>
+                        <option>
+                            Rondônia
+                        </option>
+                        <option>
+                            Roraima
+                        </option>
+                        <option>
+                            Santa Catarina
+                        </option>
+                        <option>
+                            São Paulo
+                        </option>
+                        <option>
+                            Sergipe
+                        </option>
+                        <option>
+                            Tocantins
+                        </option>
+                        <option>
+                            Distrito Federal
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="inputFile" class="form-label">
+                        Enviar foto do comprovante de endereço
+                    </label>
+                  <input class="form-control" type="file" id="inputFile"></div>
+                <div class="col">
+                    <label for="inputFile" class="form-label">
+                        Foto do RG (Frente)
+                    </label>
+                  <input class="form-control" type="file" id="inputFile">
+                </div>
+                <div class="col">
+                    <label for="inputFile" class="form-label">
+                        Foto do RG (Verso)
+                    </label>
+                  <input class="form-control" type="file" id="inputFile"></div>
+               </div>
+               <div class="row">
+                    <div class="col-12">
+                        <button onclick="calculardata()" class="btn btn-primary" style="margin-top: 25px;">
+                            Enviar
+                        </button>
+                        <div id="resultado"></div>
+                    </div>
+               </div>
+        </form>
     </div>
-    <div class="renda">
-        <h1>
-            Renda per capita
-        </h1>
-        <input type="number" id="renda">
-        <button onclick="renda()">
-            >
-        </button>
-        <div id="mostrarcurso"></div>
-    </div>
-    <div class="pessoas">
-        <h1>
-            Pessoas
-        </h1>
-        <input type="number" id="pessoas">
-        <button onclick="renda()">
-            >
-        </button>
-        <div id="mostrarcurso"></div>
-    </div>
-
-</body>
-
-
+  </body>
+  <footer>
+    <div class="row" style="margin-right: 0; padding-top: 50px; background-color: #277CD0; display: flex; padding-bottom: 103px;">
+        <div class="col" style="color: white;">
+            <h1 style="margin-left: 30px;">
+                Adm. Regional
+            </h1>
+          <ul style="list-style-type: none;">
+            <li>
+                <span>
+                  Endereço:
+                </span> Rua 31-A, N° 43 Setor Aeroporto Goiânia - GO
+            </li>
+            <li>
+              <span>
+                Telefone:
+              </span> (62) 3219-5180
+            </li>
+            <li>
+              <span>
+                Email:
+              </span>
+              <a target="_blank" href="mailto:ouvidoria@ufesbr" style="color: white;">
+                atendimento@go.senac.br
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col" style="color: white;">
+            <h1 style="margin-left: 30px;">
+                Atendimento on-line
+            </h1>
+            <ul style="list-style-type: none;">
+                <li>
+                    Segunda a sexta: 8h às 20h
+                </li>
+                <li>
+                    Sábado: 8h às 14h
+                </li>
+            </ul>
+        </div>
+      </div>
+  </footer>
 </html>

@@ -10,15 +10,14 @@ function calculardata () {
 
     rendapercapita = (renda / pessoas)
     
-    if (idadeconver >= 16 && rendapercapita <= 1.5) {
-        document.getElementById('mostrarcurso').innerHTML = ('Seja Bem-Vindo!')
+    if (idadeconver > 16 && rendapercapita < 1500) {
+        document.getElementById('resultado').innerHTML = ('Seja Bem-Vindo!')
     } else if (idadeconver < 16) {
-        document.getElementById('mostrarcurso').innerHTML = ('')
-    } else if (rendapercapita > 1.5 ) {
-        document.getElementById('mostrarcurso').innerHTML = ('')
+        document.getElementById('resultado').innerHTML = ('Não foi possivel fazer o cadastro.')
+    } else if (rendapercapita > 1500 ) {
+        document.getElementById('resultado').innerHTML = ('Não foi possivel fazer o cadastro.')
     } else  {
-        document.getElementById('mostrarcurso').innerHTML = ('')
+        document.getElementById('resultado').innerHTML = ('Preencha os campos acima.')
     }
-        
-
+    
 }
