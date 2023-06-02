@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
     <link rel="shortcut icon" href="https://www.go.senac.br/img/icons/favicon.png">
     <title>Senac Goiás - Pré-Matrículas</title>
@@ -28,13 +27,19 @@
                 <a class="nav-link active" aria-current="page" href="" style="color:black;">
                     Pré-Matrículas
                 </a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link active" aria-current="page" href="pagina2.html" style="color:black;">
+                    Boletim
+                </a>
+              </li>    
             </ul>
           </div>
         </div>
       </nav>
 </header>
 <body>
-    <div class="row" style="margin-right: 0; background-color: #45B4DE; padding-bottom: 30px;">
+    <div class="row" style="margin-right: 0; background-color: #45B4DE; padding-bottom: 92px;">
         <div class="col" id="campus">
             <h2 style="display: flex; justify-content: center; color: black; align-items: center; margin-top: 60px;">
                Matrículas - SENAC-GO
@@ -97,7 +102,7 @@
                     <input class="form-control" type="text" name="f_nome" id="campo5">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="gap: 10px;">
                 <div class="col">
                     <label for="campo6" class="form-label">
                         Data de nascimento
@@ -133,7 +138,7 @@
                 <div class="col">
                     <label for="inputZip" class="form-label">
                         CEP
-                    </input>
+                    </label>
                     <input type="text" class="form-control" id="inputZip">
                 </div>
                 <div class="col">
@@ -228,24 +233,6 @@
                     </select>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <label for="inputFile" class="form-label">
-                        Enviar foto do comprovante de endereço
-                    </label>
-                  <input class="form-control" type="file" id="inputFile"></div>
-                <div class="col">
-                    <label for="inputFile" class="form-label">
-                        Foto do RG (Frente)
-                    </label>
-                  <input class="form-control" type="file" id="inputFile">
-                </div>
-                <div class="col">
-                    <label for="inputFile" class="form-label">
-                        Foto do RG (Verso)
-                    </label>
-                  <input class="form-control" type="file" id="inputFile"></div>
-               </div>
                <div class="row">
                     <div class="col-12">
                         <button onclick="calculardata()" class="btn btn-primary" style="margin-top: 25px;" form="resultado">
@@ -258,11 +245,11 @@
     </div>
   </body>
   <footer>
-    <div class="row" style="margin-right: 0; padding-top: 50px; background-color: #277CD0; display: flex; padding-bottom: 122px;">
+    <div class="row" style="margin-right: 0; padding-top: 50px; background-color: #277CD0; display: flex; padding-bottom: 127px;">
         <div class="col" style="color: white;">
-            <h4 style="margin-left: 30px;">
+            <h5 style="margin-left: 30px;">
                 Adm. Regional
-            </h4>
+            </h5>
           <ul style="list-style-type: none;">
             <li>
                 <span>
@@ -285,9 +272,9 @@
           </ul>
         </div>
         <div class="col" style="color: white;">
-            <h4 style="margin-left: 30px;">
+            <h5 style="margin-left: 30px;">
                 Atendimento on-line
-            </h4>
+            </h5>
             <ul style="list-style-type: none;">
                 <li>
                     Segunda a sexta: 8h às 20h
